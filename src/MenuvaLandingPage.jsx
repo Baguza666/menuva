@@ -94,7 +94,7 @@ const packages = [
   {
     name: "Starter",
     subtitle: "Pour les besoins simples",
-    price: "À partir de 3 900 MAD",
+    price: "à partir de 3 900 MAD",
     cta: "Demander les détails",
     features: [
       "QR menu",
@@ -107,7 +107,7 @@ const packages = [
   {
     name: "Flagship",
     subtitle: "La formule idéale pour la majorité des restaurants et coffee shops",
-    price: "À partir de 6 500 MAD",
+    price: "à partir de 6 500 MAD",
     cta: "Demander un audit",
     featured: true,
     badge: "Recommandé",
@@ -124,7 +124,7 @@ const packages = [
   {
     name: "Premium",
     subtitle: "Pour les établissements qui veulent aller plus loin",
-    price: "À partir de 8 500 MAD",
+    price: "à partir de 8 500 MAD",
     cta: "Me contacter",
     features: [
       "Tout Flagship",
@@ -234,12 +234,12 @@ export default function MenuvaLandingPage() {
               <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d5c7b2] bg-[#f8efe2] px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#6e6457]">
                 <MapPin className="h-3.5 w-3.5" /> Basé à El Jadida
               </p>
-              <h1 className="font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-[3.4rem] lg:leading-[1.05]">
-                Menus digitaux premium et optimisation Google Business pour restaurants et coffee shops à El Jadida
+              <h1 className="font-serif text-4xl font-semibold leading-tight tracking-tight text-[#17130f] sm:text-5xl lg:text-[3.4rem] lg:leading-[1.03]">
+                Convertissez plus avec une présence digitale premium
               </h1>
-              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[#50493f] sm:text-lg">
-                J’aide les établissements à améliorer leur image en ligne, simplifier l’accès au menu, et faciliter les
-                commandes ou réservations directes.
+              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[#3f382f] sm:text-lg">
+                En quelques semaines, votre restaurant ou coffee shop transforme plus de vues locales en réservations,
+                commandes et contacts directs — sans dépendre uniquement des plateformes.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -258,8 +258,9 @@ export default function MenuvaLandingPage() {
                 </a>
               </div>
 
-              <p className="mt-6 text-sm text-[#665d51]">
-                Pour les établissements qui veulent une présence digitale à la hauteur de leur qualité réelle.
+              <p className="mt-6 inline-flex items-center gap-2 rounded-xl border border-[#ccb08a] bg-[#fff6e8] px-4 py-2 text-sm font-medium text-[#433a2f] shadow-[0_12px_25px_-20px_rgba(33,24,14,0.95)]">
+                <CircleCheck className="h-4 w-4 text-[#7b5c36]" />
+                Déjà adopté par des établissements reconnus à El Jadida.
               </p>
             </motion.div>
 
@@ -271,21 +272,32 @@ export default function MenuvaLandingPage() {
             >
               <div className="absolute -inset-5 rounded-[2.2rem] bg-gradient-to-br from-[#d6be97]/40 via-transparent to-[#bda178]/25 blur-2xl" />
 
-              <div className="relative mx-auto max-w-md rounded-[2.4rem] border border-[#d9c8af] bg-[#fcf7ef] p-3 shadow-[0_35px_80px_-40px_rgba(41,31,20,0.85)]">
-                <div className="rounded-[2rem] border border-[#e0d2bf] bg-[#fffdfa] p-4">
+              <div className="relative mx-auto max-w-md rounded-[2.4rem] border border-[#cbb28f] bg-[#fdf8ef] p-3 shadow-[0_40px_90px_-40px_rgba(21,15,9,0.95)]">
+                <div className="rounded-[2rem] border border-[#d5c2a6] bg-[#fffdfa] p-4">
                   <div className="mx-auto mb-3 h-1.5 w-20 rounded-full bg-[#e6d7c3]" />
-                  <div className="overflow-hidden rounded-2xl border border-[#e4d8c7] bg-[#fffaf2]">
-                    <div className="h-32 bg-[radial-gradient(circle_at_20%_20%,#e4c79a_0%,#b39670_45%,#8e7252_100%)]" />
-                    <div className="space-y-3 p-4">
-                      <div className="h-3 w-2/3 rounded bg-[#eee5d7]" />
-                      <div className="h-2.5 w-full rounded bg-[#f3ecdf]" />
-                      <div className="h-2.5 w-5/6 rounded bg-[#f3ecdf]" />
-                      <div className="mt-3 grid grid-cols-2 gap-2">
-                        <div className="rounded-xl border border-[#eadfcf] bg-white p-2 text-xs text-[#665d50]">Espresso Signature</div>
-                        <div className="rounded-xl border border-[#eadfcf] bg-white p-2 text-xs text-[#665d50]">Brunch Maison</div>
+                  <div className="overflow-hidden rounded-2xl border border-[#ddcbb1] bg-[#fffcf6]">
+                    <div className="relative h-36 bg-[linear-gradient(120deg,#241b13_0%,#6a5138_45%,#b79269_100%)] px-4 py-3 text-[#fff3e2]">
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-[#f7ddbc]">Le Comptoir Maison</p>
+                      <p className="mt-2 max-w-[70%] font-serif text-xl">Brunch & Café de spécialité</p>
+                      <div className="absolute right-3 top-3 rounded-full border border-[#f3d4ae]/60 bg-[#1f1710]/45 px-2 py-1 text-[10px]">
+                        Ouvert • 08:00–22:30
+                      </div>
+                    </div>
+                    <div className="space-y-3 p-4 text-[#473d32]">
+                      <div className="flex items-center justify-between rounded-xl border border-[#ecdfce] bg-white px-3 py-2 text-xs">
+                        <span>Flat White Signature</span>
+                        <span className="font-semibold">39 MAD</span>
+                      </div>
+                      <div className="flex items-center justify-between rounded-xl border border-[#ecdfce] bg-white px-3 py-2 text-xs">
+                        <span>Toast Saumon Fumé</span>
+                        <span className="font-semibold">72 MAD</span>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 text-xs">
+                        <div className="rounded-xl border border-[#eadfcf] bg-[#fffdf9] p-2 text-center">Réserver</div>
+                        <div className="rounded-xl border border-[#eadfcf] bg-[#fffdf9] p-2 text-center">Commander</div>
                       </div>
                       <button className="mt-2 w-full rounded-xl bg-[#2f2a24] py-2 text-xs font-semibold text-[#f8f4ee]">
-                        Réserver / Commander
+                        Voir le menu complet
                       </button>
                     </div>
                   </div>
@@ -299,9 +311,9 @@ export default function MenuvaLandingPage() {
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 right-0 max-w-[230px] rounded-2xl border border-[#d8cab6] bg-[#fff9ef]/95 p-3 shadow-xl">
-                <p className="text-xs font-semibold text-[#2f2a24]">Google Business</p>
-                <p className="mt-1 text-xs text-[#6a6258]">Menu, horaires, itinéraire et appel en 1 clic</p>
+              <div className="absolute -bottom-6 right-0 max-w-[230px] rounded-2xl border border-[#d2b58d] bg-[#fff9ef]/95 p-3 shadow-xl">
+                <p className="text-xs font-semibold text-[#2f2a24]">Google Business optimisé</p>
+                <p className="mt-1 text-xs text-[#5a5045]">Menu, avis, itinéraire, appel et WhatsApp en accès immédiat</p>
                 <div className="mt-2 flex items-center gap-1 text-[#8a6f4d]">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-3 w-3 fill-current" />
@@ -449,7 +461,11 @@ export default function MenuvaLandingPage() {
           </a>
         </motion.section>
 
-        <motion.section id="formules" {...sectionFade} className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <motion.section
+          id="formules"
+          {...sectionFade}
+          className="mx-auto max-w-7xl rounded-[2.2rem] border border-[#dbc8af] bg-gradient-to-b from-[#f6ecde] to-[#efe1cc] px-4 py-20 shadow-[0_30px_70px_-52px_rgba(26,18,10,0.85)] sm:px-6 lg:px-8"
+        >
           <SectionHeader
             eyebrow="Formules"
             title="Des formules adaptées à votre établissement"
@@ -462,18 +478,18 @@ export default function MenuvaLandingPage() {
                 key={pack.name}
                 className={`relative rounded-3xl border p-6 ${
                   pack.featured
-                    ? "lg:-my-3 lg:py-9 border-[#b58f5e] bg-gradient-to-b from-[#fffaf0] to-[#f4e2c6] shadow-[0_35px_70px_-40px_rgba(60,40,18,0.9)]"
-                    : "border-[#ddd0bc] bg-[#fffdf9]"
+                    ? "lg:-my-6 lg:scale-[1.03] lg:py-10 border-[#8f6736] bg-gradient-to-b from-[#fff8ec] via-[#f4dfbf] to-[#ebd0a7] shadow-[0_45px_95px_-45px_rgba(44,29,12,1)] ring-2 ring-[#b18752]/40"
+                    : "border-[#dacbb7] bg-[#fffdf9]"
                 }`}
               >
                 {pack.badge ? (
-                  <span className="absolute -top-3 left-6 rounded-full bg-[#2f2a24] px-3 py-1 text-xs font-semibold text-[#f8f4ee]">
+                  <span className="absolute -top-3 left-6 rounded-full bg-[#2f2a24] px-3 py-1 text-xs font-semibold text-[#f8f4ee] shadow-lg">
                     {pack.badge}
                   </span>
                 ) : null}
                 <h3 className="font-serif text-2xl font-semibold">{pack.name}</h3>
                 <p className="mt-1 text-sm text-[#5e564b]">{pack.subtitle}</p>
-                <p className="mt-4 text-lg font-semibold text-[#2f2a24]">{pack.price}</p>
+                <p className={`mt-4 font-semibold ${pack.featured ? "text-2xl text-[#1e1711]" : "text-lg text-[#2f2a24]"}`}>{pack.price}</p>
                 <ul className="mt-5 space-y-2 text-sm text-[#4f473d]">
                   {pack.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
@@ -572,13 +588,13 @@ export default function MenuvaLandingPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href=WHATSAPP_URL
+                href={WHATSAPP_URL}
                 className="inline-flex items-center justify-center rounded-full bg-[#2f2a24] px-6 py-3 text-sm font-semibold text-[#f8f4ee] shadow-[0_15px_30px_-18px_rgba(0,0,0,0.8)] transition hover:-translate-y-0.5"
               >
                 Demander mon audit gratuit
               </a>
               <a
-                href=WHATSAPP_URL
+                href={WHATSAPP_URL}
                 className="inline-flex items-center justify-center rounded-full border border-[#b79d77] bg-[#fdf7ee] px-6 py-3 text-sm font-semibold text-[#2f2a24] transition hover:-translate-y-0.5"
               >
                 Me contacter sur WhatsApp
@@ -598,7 +614,7 @@ export default function MenuvaLandingPage() {
             <p className="mt-1 text-sm text-[#5a5248]">Basé à El Jadida</p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-sm text-[#4b4339]">
-            <a href=WHATSAPP_URL className="hover:text-black">
+            <a href={WHATSAPP_URL} className="hover:text-black">
               WhatsApp
             </a>
             <a href="#" className="hover:text-black">
@@ -612,7 +628,7 @@ export default function MenuvaLandingPage() {
       </footer>
 
       <a
-        href=WHATSAPP_URL
+        href={WHATSAPP_URL}
         aria-label="Contacter Menuva sur WhatsApp"
         className="fixed bottom-20 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-black/20 transition hover:-translate-y-0.5 md:bottom-5"
       >
@@ -632,7 +648,7 @@ export default function MenuvaLandingPage() {
             Audit gratuit
           </a>
           <a
-            href=WHATSAPP_URL
+            href={WHATSAPP_URL}
             className="inline-flex flex-1 items-center justify-center rounded-full border border-[#b79d77] bg-[#fdf7ee] px-3 py-2.5 text-xs font-semibold text-[#2f2a24]"
           >
             WhatsApp
