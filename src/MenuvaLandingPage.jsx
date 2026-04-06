@@ -17,6 +17,8 @@ import {
   Utensils,
 } from "lucide-react";
 
+const WHATSAPP_URL = "https://wa.me/212000000000"; // TODO: Remplacez par le numéro WhatsApp Menuva
+
 const trustItems = [
   "Menu digital sur mesure",
   "Google Business optimisé",
@@ -92,7 +94,7 @@ const packages = [
   {
     name: "Starter",
     subtitle: "Pour les besoins simples",
-    price: "À partir de 1 900 MAD",
+    price: "À partir de 3 900 MAD",
     cta: "Demander les détails",
     features: [
       "QR menu",
@@ -105,7 +107,7 @@ const packages = [
   {
     name: "Flagship",
     subtitle: "La formule idéale pour la majorité des restaurants et coffee shops",
-    price: "À partir de 3 900 MAD",
+    price: "À partir de 6 500 MAD",
     cta: "Demander un audit",
     featured: true,
     badge: "Recommandé",
@@ -122,7 +124,7 @@ const packages = [
   {
     name: "Premium",
     subtitle: "Pour les établissements qui veulent aller plus loin",
-    price: "À partir de 6 900 MAD",
+    price: "À partir de 8 500 MAD",
     cta: "Me contacter",
     features: [
       "Tout Flagship",
@@ -570,13 +572,13 @@ export default function MenuvaLandingPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://wa.me/212600000000"
+                href=WHATSAPP_URL
                 className="inline-flex items-center justify-center rounded-full bg-[#2f2a24] px-6 py-3 text-sm font-semibold text-[#f8f4ee] shadow-[0_15px_30px_-18px_rgba(0,0,0,0.8)] transition hover:-translate-y-0.5"
               >
                 Demander mon audit gratuit
               </a>
               <a
-                href="https://wa.me/212600000000"
+                href=WHATSAPP_URL
                 className="inline-flex items-center justify-center rounded-full border border-[#b79d77] bg-[#fdf7ee] px-6 py-3 text-sm font-semibold text-[#2f2a24] transition hover:-translate-y-0.5"
               >
                 Me contacter sur WhatsApp
@@ -596,7 +598,7 @@ export default function MenuvaLandingPage() {
             <p className="mt-1 text-sm text-[#5a5248]">Basé à El Jadida</p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-sm text-[#4b4339]">
-            <a href="https://wa.me/212600000000" className="hover:text-black">
+            <a href=WHATSAPP_URL className="hover:text-black">
               WhatsApp
             </a>
             <a href="#" className="hover:text-black">
@@ -610,7 +612,7 @@ export default function MenuvaLandingPage() {
       </footer>
 
       <a
-        href="https://wa.me/212600000000"
+        href=WHATSAPP_URL
         aria-label="Contacter Menuva sur WhatsApp"
         className="fixed bottom-20 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-black/20 transition hover:-translate-y-0.5 md:bottom-5"
       >
@@ -630,7 +632,7 @@ export default function MenuvaLandingPage() {
             Audit gratuit
           </a>
           <a
-            href="https://wa.me/212600000000"
+            href=WHATSAPP_URL
             className="inline-flex flex-1 items-center justify-center rounded-full border border-[#b79d77] bg-[#fdf7ee] px-3 py-2.5 text-xs font-semibold text-[#2f2a24]"
           >
             WhatsApp

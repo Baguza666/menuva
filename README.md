@@ -20,6 +20,12 @@ npm run dev
 
 - `http://localhost:5173/`
 
+## Configuration rapide
+
+- Le lien WhatsApp est centralisé dans `src/MenuvaLandingPage.jsx` :
+  - `const WHATSAPP_URL = "https://wa.me/212000000000"`
+- Remplacez ce numéro placeholder par le numéro réel Menuva.
+
 ## Build production
 
 ```bash
