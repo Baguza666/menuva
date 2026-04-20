@@ -32,3 +32,11 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+
+## Structure du projet
+
+- `src/MenuvaLandingPage.jsx` : landing page principale (contenu + sections).
+- `src/App.jsx` : monte la landing comme homepage.
+- `src/main.jsx` : point d’entrée React.
+- `tailwind.config.js` / `postcss.config.js` : configuration Tailwind.
